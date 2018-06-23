@@ -48,7 +48,7 @@ class GithubUrl
   end
 
   def scheme
-    remote_origin.split(':').first == 'http' ? 'http' : 'https'
+    remote_origin.split(':').first == 'https' ? 'https' : 'http'
   end
 
   def file_path
